@@ -1,0 +1,24 @@
+@use './variables';
+
+footer {
+  background-color: variables.$black;
+  color: variables.$white;
+  padding: 10px 0;
+
+  p {
+    text-align: center;
+
+    span {
+      text-transform: uppercase;
+      color: variables.$orange;
+    }
+
+    a {
+      color: variables.$white;
+    }
+
+    a:visited {
+      // color: variables.$purple;
+    }
+  }
+}

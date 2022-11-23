@@ -225,3 +225,56 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+nav {
+  background-color: darkviolet;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 25%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav ul li {
+  list-style: none;
+  padding: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
+footer p {
+  text-align: center;
+}
+footer p span {
+  text-transform: uppercase;
+  color: orange;
+}
+footer p a {
+  color: white;
+}

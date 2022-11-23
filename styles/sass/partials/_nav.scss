@@ -1,0 +1,22 @@
+@use './variables';
+
+nav {
+  background-color: variables.$purple;
+  
+  ul {
+    display: flex;
+    margin: 0 25%;
+    justify-content: space-evenly;
+    
+    li {
+      list-style: none;
+      padding: 20px;
+      
+      a {
+        color: variables.$white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
