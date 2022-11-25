@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortfoLEO</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://kit.fontawesome.com/9793ebd2a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     
@@ -28,7 +28,80 @@
   </header>
 
   <main>
+    <!-- Blog Section -->
+    <section class="about" id="about">
+      <div class="wrapper">
+        <h2>About</h2>
+        <p>I am a Web Developer with a background in Computer Science. I just completed Juno College’s Web Development Bootcamp where I built upon my knowledge and skills of HTML, CSS, JavaScript, & React to build responsive websites. I also have previous experience as a part-time Web Designer/Developer where I used my analytical skills and the attention to detail to redesign and improve upon their website. My passion for programming comes from creating & discussing designs with others, troubleshooting, and visibly see the results I produce.</p>
+      </div>
+    </section>
+    
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+      <div class="wrapper">
+        <h2>Projects</h2>
 
+        <div class="oneProject">
+          <img src="./styles/sass/assets/projectOne.jpg" alt="">
+          <div class="info">
+            <h4>Project 1</h4>
+            <p>This is project 1</p>
+            <div class="buttons">
+              <button>Live</button>
+              <button>Code</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="oneProject">
+          <img src="https://placekitten.com/100/100" alt="">
+          <div class="info">
+            <h4>Recipe Rescue App</h4>
+            <p>Have some ingredients lying around in your fridge? Don't know how to use them to make a dish? Then <b>Recipe Rescue</b> is at your service.</p>
+            <div class="buttons">
+              <button>Live</button>
+              <button>Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h2>Implemented Skills</h2>
+        <div class="skillIcons">
+          <div class="oneSkill">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+          </div>
+          <div class="oneSkill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="oneSkill">
+            <i class="fa-brands fa-sass"></i>
+            <h3>SASS</h3>
+          </div>
+          <div class="oneSkill">
+            <i class="fa-brands fa-square-js"></i>
+            <h3>JAVASCRIPT</h3>
+          </div>
+          <div class="oneSkill">
+            <i class="fa-brands fa-github"></i>
+            <h3>GITHUB</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <h2>Get In Touch</h2>
+      </div>
+    </section>
   </main>
 
   <footer>
