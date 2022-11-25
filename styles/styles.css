@@ -301,6 +301,7 @@ nav ul li a {
   border-radius: 20px;
 }
 .oneProject .info {
+  margin: 20px 0;
   margin-left: 50px;
   width: 50%;
 }
@@ -354,6 +355,41 @@ nav ul li a {
 .skillIcons .oneSkill h3 {
   margin-top: 5px;
   margin-left: 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid black;
+}
+form .oneInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+form .oneInput input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 25vw;
+}
+form button {
+  text-decoration: none;
+  text-align: center;
+  background-color: darkviolet;
+  color: white;
+  padding: 20px;
+  margin: 10px 20px 10px 0;
+  width: 100px;
+  border-radius: 15px;
 }
 
 footer {

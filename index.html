@@ -61,7 +61,7 @@
             <h3>Textilee w/ JavaScript features</h3>
             <p>This is a continuation of the Textilee Project. Here, I used vanilla JS to add some features. The purpose was mainly to learn & play around with JavaScript, but to also have fun!</p>
             <div class="buttons">
-              <a href="#" class="button">Live</a>
+              <a href="#" class="button" id="notLive">Live</a>
               <a href="https://github.com/leohon/leo-hon-project-one/tree/assignmentTwo" class="button">Code</a>
             </div>
           </div>
@@ -135,6 +135,31 @@
     <section class="contact" id="contact">
       <div class="wrapper">
         <h2>Get In Touch</h2>
+
+        <!-- Form -->
+        <form action="#contact">
+          <div class="oneInput">
+            <label for="name">Name</label>
+            <input type="text" class="name" id="name">
+          </div>
+          
+          <div class="oneInput">
+            <label for="phone">Phone #</label>
+            <input type="text" class="phone" id="phone">
+          </div>
+          
+          <div class="oneInput">
+            <label for="email">Email</label>
+            <input type="text" class="email" id="email">
+          </div>
+          
+          <div class="oneInput">
+            <label for="comment">Comment</label>
+            <input type="textarea" class="comment" id="comment">
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </section>
   </main>
