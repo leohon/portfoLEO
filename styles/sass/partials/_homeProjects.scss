@@ -1,0 +1,18 @@
+@use './variables';
+
+.oneProject {
+  display: flex;
+  margin: 0 100px;
+  
+  img {
+    width: 50%;
+  }
+
+  .info {
+    margin-left: 50px;
+
+    b {
+      text-transform: uppercase;
+    }
+  }
+}

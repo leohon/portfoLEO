@@ -4,5 +4,9 @@
 @use './partials/variables';
 @use './partials/header';
 @use './partials/nav';
+@use './partials/homeAbout';
+@use './partials/homeProjects';
+@use './partials/homeSkills';
+@use './partials/homeContact';
 @use './partials/footer.scss';
 @use './partials/mediaQueries';

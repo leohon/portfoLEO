@@ -232,13 +232,25 @@ html {
   margin: 0 auto;
 }
 
-h1, h3, p, ul {
+h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
 }
 
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
 html {
   font-size: 125%;
+}
+
+h1, h3 {
+  text-transform: uppercase;
 }
 
 nav {
@@ -261,6 +273,48 @@ nav ul li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.oneProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 100px;
+}
+.oneProject img {
+  width: 50%;
+}
+.oneProject .info {
+  margin-left: 50px;
+}
+.oneProject .info b {
+  text-transform: uppercase;
+}
+
+.skillIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.skillIcons .oneSkill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer {

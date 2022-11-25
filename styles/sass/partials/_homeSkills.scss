@@ -1,0 +1,14 @@
+@use './variables';
+
+.skillIcons {
+  display: flex;
+  justify-content: space-evenly;
+  border: 5px solid variables.$black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+
+  .oneSkill {
+    display: flex;
+  }
+}
