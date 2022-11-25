@@ -245,6 +245,10 @@ h2 {
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+
 html {
   font-size: 125%;
 }
@@ -275,7 +279,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-p {
+.about p {
   text-align: justify;
   border: 5px solid black;
   border-radius: 15px;
@@ -287,13 +291,35 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 100px;
+  margin: 50px 100px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
 }
 .oneProject img {
   width: 50%;
+  border-radius: 20px;
 }
 .oneProject .info {
   margin-left: 50px;
+  width: 50%;
+}
+.oneProject .info h3, .oneProject .info p, .oneProject .info .buttons {
+  padding: 10px 0;
+}
+.oneProject .info .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.oneProject .info .buttons .button {
+  text-decoration: none;
+  text-align: center;
+  background-color: darkviolet;
+  color: white;
+  padding: 20px;
+  margin: 10px 20px 10px 0;
+  width: 100px;
 }
 .oneProject .info b {
   text-transform: uppercase;
@@ -303,18 +329,31 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 5px solid black;
   border-radius: 15px;
-  padding: 15px;
+  padding: 15px 100px;
   margin-top: 10px;
 }
 .skillIcons .oneSkill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 33%;
+  padding: 0 100px;
+}
+.skillIcons .oneSkill .icon {
+  width: 50px;
+}
+.skillIcons .oneSkill .icon i {
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+.skillIcons .oneSkill h3 {
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 footer {

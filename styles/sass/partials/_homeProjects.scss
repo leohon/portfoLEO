@@ -2,14 +2,37 @@
 
 .oneProject {
   display: flex;
-  margin: 0 100px;
+  margin: 50px 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px variables.$black;
   
   img {
     width: 50%;
+    border-radius: 20px;
   }
 
   .info {
     margin-left: 50px;
+    width: 50%;
+    
+    h3, p, .buttons {
+      padding: 10px 0;
+    }
+
+    .buttons {
+      display: flex;
+      
+      .button {
+        text-decoration: none;
+        text-align: center;
+        background-color: variables.$purple;
+        color: variables.$white;
+        padding: 20px;
+        margin: 10px 20px 10px 0;
+        width: 100px;
+      }
+    }
+
 
     b {
       text-transform: uppercase;
