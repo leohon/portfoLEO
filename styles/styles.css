@@ -238,11 +238,12 @@ h1, h2, h3, h4, p, ul {
 }
 
 section {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 img {
@@ -253,12 +254,22 @@ html {
   font-size: 125%;
 }
 
-h1, h3 {
+header {
+  background-image: url("./sass/assets/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header .wrapper {
+  padding: 300px 0;
+}
+header .wrapper h1, header .wrapper h3 {
   text-transform: uppercase;
+  color: orange;
+  padding-left: 50px;
 }
 
 nav {
-  background-color: darkviolet;
+  background-color: #9400d3;
 }
 nav ul {
   display: -webkit-box;
@@ -283,7 +294,7 @@ nav ul li a {
   text-align: justify;
   border: 5px solid black;
   border-radius: 15px;
-  padding: 15px;
+  padding: 25px 50px;
   margin-top: 10px;
 }
 
@@ -293,16 +304,16 @@ nav ul li a {
   display: flex;
   margin: 50px 100px;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px black;
-          box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px orange;
+          box-shadow: 0 0 20px orange;
+  background: white;
 }
 .oneProject img {
   width: 50%;
   border-radius: 20px;
 }
 .oneProject .info {
-  margin: 20px 0;
-  margin-left: 50px;
+  padding: 25px;
   width: 50%;
 }
 .oneProject .info h3, .oneProject .info p, .oneProject .info .buttons {
@@ -316,7 +327,7 @@ nav ul li a {
 .oneProject .info .buttons .button {
   text-decoration: none;
   text-align: center;
-  background-color: darkviolet;
+  background-color: #9400d3;
   color: white;
   padding: 20px;
   margin: 10px 20px 10px 0;
@@ -332,40 +343,47 @@ nav ul li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 5px solid black;
-  border-radius: 15px;
   padding: 15px 100px;
-  margin-top: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .skillIcons .oneSkill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 33%;
-  padding: 0 100px;
+  padding: 10px 100px;
 }
 .skillIcons .oneSkill .icon {
   width: 50px;
 }
 .skillIcons .oneSkill .icon i {
-  text-align: center;
-  font-size: 2rem;
-  margin-right: 15px;
+  font-size: 3rem;
 }
 .skillIcons .oneSkill h3 {
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 form {
+  width: 75%;
+  text-align: center;
+}
+form .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid black;
 }
-form .oneInput {
+form .form .oneInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,20 +394,40 @@ form .oneInput {
   width: 50%;
   padding: 20px;
 }
-form .oneInput input {
+form .form .oneInput label {
+  text-align: left;
+}
+form .form .oneInput input {
   border: none;
   border-bottom: 1px solid black;
   width: 25vw;
 }
 form button {
-  text-decoration: none;
-  text-align: center;
-  background-color: darkviolet;
+  background-color: #9400d3;
   color: white;
   padding: 20px;
-  margin: 10px 20px 10px 0;
-  width: 100px;
+  margin: 10px 20px;
+  width: 300px;
   border-radius: 15px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px dotted black;
+  border-radius: 30px;
+  height: 175px;
+}
+.social a {
+  margin: 65px 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.social a i {
+  font-size: 2rem;
+  color: black;
 }
 
 footer {

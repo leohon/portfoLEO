@@ -1,5 +1,19 @@
 @use './variables';
 
-h1, h3{
-  text-transform: uppercase;
+header {
+  background-image: url("./sass/assets/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  // background-attachment: fixed;
+  
+
+  .wrapper {
+    padding: 300px 0;
+
+    h1, h3{
+      text-transform: uppercase;
+      color: variables.$orange;
+      padding-left: 50px;
+    }
+  }
 }
