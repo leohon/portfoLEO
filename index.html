@@ -10,6 +10,7 @@
 </head>
 <body>
   <header>
+    <!-- Navigation Menu -->
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -20,27 +21,28 @@
       </ul>
     </nav>
     
-    <div class="wrapper">
     <!-- Title -->
-    <h1>Leo Hon</h1>
+    <div class="wrapper">
+      <h1>Leo Hon</h1>
       <h3>Web Developer</h3>
     </div>
   </header>
 
   <main>
-    <!-- Blog Section -->
+    <!-- About Section -->
     <section class="about" id="about">
+      <h2>About</h2>
+
       <div class="wrapper">
-        <h2>About</h2>
         <p>I am a Web Developer with a background in Computer Science. I just completed Juno College’s Web Development Bootcamp where I built upon my knowledge and skills of HTML, CSS, JavaScript, & React to build responsive websites. I also have previous experience as a part-time Web Designer/Developer where I used my analytical skills and the attention to detail to redesign and improve upon their website. My passion for programming comes from creating & discussing designs with others, troubleshooting, and visibly see the results I produce.</p>
       </div>
     </section>
     
     <!-- Project Section -->
     <section class="projects" id="projects">
-      <div class="wrapper">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
 
+      <div class="wrapper">
         <!-- Juno Project 2 -->
         <div class="oneProject">
           <div class="info">
@@ -51,12 +53,14 @@
               <a href="https://github.com/recipeRescueApp/recipeRescueApp" class="button">Code</a>
             </div>
           </div>
-          <img src="./styles/sass/assets/projectTwo.jpg" alt="">
+
+          <img src="./styles/sass/assets/projectTwo.jpg" alt="Recipe Rescue App page">
         </div>
 
         <!-- Juno Assignment 2 -->
         <div class="oneProject">
-          <img src="./styles/sass/assets/projectOne.jpg" alt="">
+          <img src="./styles/sass/assets/projectOne.jpg" alt="Homepage of Textilee website">
+
           <div class="info">
             <h3>Textilee w/ JavaScript features</h3>
             <p>This is a continuation of the <b>Textilee Project</b>. Here, I used vanilla JS to add some features. The purpose was mainly to learn & play around with JavaScript, but to also have fun!</p>
@@ -77,13 +81,15 @@
               <a href="https://github.com/leohon/leo-hon-project-one" class="button">Code</a>
             </div>
           </div>
-          <img src="./styles/sass/assets/projectOne.jpg" alt="">
+          
+          <img src="./styles/sass/assets/projectOne.jpg" alt="Homepage of Textilee website">
         </div>
 
-         <!-- Juno Assignment 1 -->
-         <div class="oneProject">
+        <!-- Juno Assignment 1 -->
+        <div class="oneProject">
           <!-- ./styles/sass/assets/ -->
-          <img src="https://placekitten.com/100/100" alt="">
+          <img src="" alt="Front page of Electric Select website">
+
           <div class="info">
             <h3>Electric Select</h3>
             <p>An appliance company's one page website that is converted from a provided design. </p>
@@ -98,10 +104,10 @@
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-      <div class="wrapper">
-        <h2>Implemented Skills</h2>
-        <div class="skillIcons">
+      <h2>Implemented Skills</h2>
 
+      <div class="wrapper">
+        <div class="skillIcons">
           <!-- HTML -->
           <div class="oneSkill">
             <div class="icon">
@@ -153,7 +159,6 @@
         <!-- Form -->
         <form action="#contact" method="#" name="contactForm">
           <div class="form">
-
             <div class="oneInput">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" required>
@@ -175,17 +180,18 @@
             </div>
           </div>
           
-          <button type="submit">Get In Touch</button>
+          <button type="submit" class="formButton">Get In Touch</button>
         </form>
 
-        <div class="social">
+        <!-- Ways to connect -->
+        <div class="connect">
           <a href="https://www.linkedin.com/in/leo-hon/">
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a href="https://github.com/leohon">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="">
+          <a href="mailto:leohon@hotmail.com">
             <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
