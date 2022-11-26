@@ -13,10 +13,12 @@
   .oneSkill {
     display: flex;
     width: 33%;
-    padding: 10px 100px;
+    padding: 10px 75px;
+    text-align: center;
 
     .icon {
-      width: 50px;
+      width: 100px;
+      text-align: center;
       
       i {
         font-size: 3rem;
@@ -25,7 +27,7 @@
       
     h3 {
       margin-top: 20px;
-      margin-left: 40px;
+      margin-left: 10px;
     }
   }
 }

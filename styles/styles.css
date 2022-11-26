@@ -269,7 +269,7 @@ header .wrapper h1, header .wrapper h3 {
 }
 
 nav {
-  background-color: #9400d3;
+  background-color: darkviolet;
 }
 nav ul {
   display: -webkit-box;
@@ -327,11 +327,12 @@ nav ul li a {
 .oneProject .info .buttons .button {
   text-decoration: none;
   text-align: center;
-  background-color: #9400d3;
+  background-color: darkviolet;
   color: white;
   padding: 20px;
   margin: 10px 20px 10px 0;
   width: 100px;
+  border-radius: 30px;
 }
 .oneProject .info b {
   text-transform: uppercase;
@@ -353,17 +354,19 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   width: 33%;
-  padding: 10px 100px;
+  padding: 10px 75px;
+  text-align: center;
 }
 .skillIcons .oneSkill .icon {
-  width: 50px;
+  width: 100px;
+  text-align: center;
 }
 .skillIcons .oneSkill .icon i {
   font-size: 3rem;
 }
 .skillIcons .oneSkill h3 {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .contact .wrapper {
@@ -403,7 +406,7 @@ form .form .oneInput input {
   width: 25vw;
 }
 form button {
-  background-color: #9400d3;
+  background-color: darkviolet;
   color: white;
   padding: 20px;
   margin: 10px 20px;
@@ -411,7 +414,7 @@ form button {
   border-radius: 15px;
 }
 
-.social {
+.connect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,13 +422,13 @@ form button {
   border-radius: 30px;
   height: 175px;
 }
-.social a {
+.connect a {
   margin: 65px 25px;
   width: 50px;
   height: 50px;
   text-align: center;
 }
-.social a i {
+.connect a i {
   font-size: 2rem;
   color: black;
 }
