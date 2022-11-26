@@ -54,12 +54,12 @@
           <img src="./styles/sass/assets/projectTwo.jpg" alt="">
         </div>
 
-        <!-- Juno Assignment 1 -->
+        <!-- Juno Assignment 2 -->
         <div class="oneProject">
           <img src="./styles/sass/assets/projectOne.jpg" alt="">
           <div class="info">
             <h3>Textilee w/ JavaScript features</h3>
-            <p>This is a continuation of the Textilee Project. Here, I used vanilla JS to add some features. The purpose was mainly to learn & play around with JavaScript, but to also have fun!</p>
+            <p>This is a continuation of the <b>Textilee Project</b>. Here, I used vanilla JS to add some features. The purpose was mainly to learn & play around with JavaScript, but to also have fun!</p>
             <div class="buttons">
               <a href="#" class="button" id="notLive">Live</a>
               <a href="https://github.com/leohon/leo-hon-project-one/tree/assignmentTwo" class="button">Code</a>
@@ -71,13 +71,27 @@
         <div class="oneProject">
           <div class="info">
             <h3>Textilee</h3>
-            <p>This is project 1</p>
+            <p>This is Project 1 from <a href="https://junocollege.com/">Juno College</a> where I created a multi-page website for <b>Textilee</b>  based on a provided design.</p>
             <div class="buttons">
               <a href="https://projectone-textile.netlify.app/" class="button">Live</a>
               <a href="https://github.com/leohon/leo-hon-project-one" class="button">Code</a>
             </div>
           </div>
           <img src="./styles/sass/assets/projectOne.jpg" alt="">
+        </div>
+
+         <!-- Juno Assignment 1 -->
+         <div class="oneProject">
+          <!-- ./styles/sass/assets/ -->
+          <img src="https://placekitten.com/100/100" alt="">
+          <div class="info">
+            <h3>Electric Select</h3>
+            <p>An appliance company's one page website that is converted from a provided design. </p>
+            <div class="buttons">
+              <a href="#" class="button" id="notLive">Live</a>
+              <a href="https://github.com/leohon/LeoHon-assignment1" class="button">Code</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -133,33 +147,48 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
+      <h2>Contact</h2>
+      
       <div class="wrapper">
-        <h2>Get In Touch</h2>
-
         <!-- Form -->
-        <form action="#contact">
-          <div class="oneInput">
-            <label for="name">Name</label>
-            <input type="text" class="name" id="name">
-          </div>
-          
-          <div class="oneInput">
-            <label for="phone">Phone #</label>
-            <input type="text" class="phone" id="phone">
-          </div>
-          
-          <div class="oneInput">
-            <label for="email">Email</label>
-            <input type="text" class="email" id="email">
-          </div>
-          
-          <div class="oneInput">
-            <label for="comment">Comment</label>
-            <input type="textarea" class="comment" id="comment">
-          </div>
+        <form action="#contact" method="#" name="contactForm">
+          <div class="form">
 
-          <button type="submit">Send</button>
+            <div class="oneInput">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            
+            <div class="oneInput">
+              <label for="phone">Phone #</label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+            
+            <div class="oneInput">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="oneInput">
+              <label for="comment">Comment</label>
+              <input type="textarea" name="comment" id="comment" >
+            </div>
+          </div>
+          
+          <button type="submit">Get In Touch</button>
         </form>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/in/leo-hon/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/leohon">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
       </div>
     </section>
   </main>
