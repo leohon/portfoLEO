@@ -3,14 +3,12 @@
 header {
   background-image: url("./sass/assets/header.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  // background-attachment: fixed;
-  
+  background-size: 100%;  
 
   .wrapper {
     padding-top: 300px;
     padding-bottom: 200px;
-    // height: 100vh;
+    height: 100vh;
 
     h1, h3{
       text-transform: uppercase;
