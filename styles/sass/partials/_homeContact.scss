@@ -8,6 +8,7 @@
   }
   
 }
+
 form {
   width: 75%;
   text-align: center;
@@ -24,6 +25,7 @@ form {
 
       label {
         text-align: left;
+        margin-bottom: 10px;
       }
       
       input {
@@ -41,20 +43,28 @@ form {
     margin: 10px 20px;
     width: 300px;
     border-radius: 15px;
+    cursor: pointer;
   }
 }
 
 .connect {
   display: flex;
+  flex-direction: column;
   border: 5px dotted black;
   border-radius: 30px;
-  height: 175px;
+  height: 200px;
+  width: 25%;
+  text-align: center;
+
+  p {
+    padding: 20px;
+    text-align: left;
+  }
   
   a {
-    margin: 65px 25px;
+    margin: 0 25px;
     width: 50px;
     height: 50px;
-    text-align: center;
     
     i {
       font-size: 2rem;
