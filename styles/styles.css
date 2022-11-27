@@ -280,7 +280,8 @@ header {
   background-size: 100%;
 }
 header .wrapper {
-  padding: 300px 0;
+  padding-top: 300px;
+  padding-bottom: 200px;
 }
 header .wrapper h1, header .wrapper h3 {
   text-transform: uppercase;
@@ -359,6 +360,13 @@ nav ul li a {
 }
 .oneProject .info b {
   text-transform: uppercase;
+}
+
+.oneProject.imgRight {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .skillIcons {
@@ -461,6 +469,7 @@ form button {
   margin: 0 25px;
   width: 50px;
   height: 50px;
+  text-decoration: none;
 }
 .connect a i {
   font-size: 2rem;
@@ -481,4 +490,110 @@ footer p span {
 }
 footer p a {
   color: white;
+}
+@media (max-width: 1200px) {
+  header .wrapper {
+    padding-top: 200px;
+  }
+  .oneProject {
+    margin: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  header .wrapper {
+    padding: 100px 0;
+  }
+  header .wrapper h1 {
+    font-size: 2.5rem;
+  }
+  header .wrapper h3 {
+    font-size: 1.5rem;
+  }
+  .oneProject {
+    margin: 50px 0;
+  }
+  .skillIcons {
+    padding: 15px 50px;
+  }
+  form {
+    width: 60%;
+  }
+  form .form .oneInput input {
+    width: 20vw;
+  }
+  .connect {
+    width: 40%;
+    margin-left: 50px;
+  }
+  .connect a {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 100%;
+  }
+  .skillIcons {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 600px) {
+  header .wrapper {
+    padding: 50px 0;
+  }
+  header .wrapper h1 {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  header .wrapper h3 {
+    padding-left: 0;
+    font-size: 1rem;
+  }
+  .about p {
+    padding: 25px;
+  }
+  .oneProject {
+    display: block;
+  }
+  .oneProject img, .oneProject .info {
+    width: 100%;
+  }
+  .skillIcons .oneSkill {
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 450px) {
+  header .wrapper {
+    padding: 25px 0;
+  }
+  .skillIcons {
+    display: block;
+  }
+  .skillIcons .oneSkill {
+    width: 100%;
+  }
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .connect {
+    width: 100%;
+    margin: 0;
+    border: none;
+    height: 150px;
+  }
+  form {
+    width: 100%;
+  }
+  form .form .oneInput {
+    width: 50%;
+  }
+  form .form .oneInput input {
+    width: 100%;
+  }
+  form button {
+    width: 200px;
+  }
 }

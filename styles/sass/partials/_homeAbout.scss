@@ -1,7 +1,7 @@
 @use './variables';
 
 .about {
-  // background: linear-gradient(#304ffe, variables.$purple);
+  // background: linear-gradient(variables.$purple, #304ffe);
 
   p {
     text-align: justify;

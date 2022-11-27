@@ -1,19 +1,133 @@
 @media (max-width: 1200px) {
-  
+  header .wrapper {
+    padding-top: 200px;
+  }
+
+  .oneProject {
+    margin: 50px;
+  }
 }
 
 @media (max-width: 1000px) {
-  
+  header .wrapper {
+    padding: 100px 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .oneProject {
+    margin: 50px 0;
+  }
+
+  .skillIcons {
+    padding: 15px 50px;
+  }
+
+  form {
+    width: 60%;
+
+    .form .oneInput input {
+      width: 20vw;
+    }
+  }
+
+  .connect {
+    width: 40%;
+    margin-left: 50px;
+    
+    a {
+      margin: 0 10px;
+    }
+  } 
 }
 
 @media (max-width: 800px) {
+  html {
+    font-size: 100%;
+  }
   
+  .skillIcons {
+    padding: 15px 0;
+  }
 }
 
 @media (max-width: 600px) {
-  
+  header .wrapper {
+    padding: 50px 0;
+
+    h1 {
+      padding-left: 0;
+      font-size: 2rem;
+    }
+    h3 {
+      padding-left: 0;
+      font-size: 1rem;
+    }
+  }
+
+  .about p {
+    padding: 25px;
+  }
+
+  .oneProject {
+    display: block;
+
+    img, .info {
+      width: 100%;
+    }
+  }
+
+  .skillIcons .oneSkill {
+    padding: 10px 25px;
+  }
 }
 
-@media (max-width: 400px) {
-  
+@media (max-width: 450px) {
+  header .wrapper {
+    padding: 25px 0;
+  }
+
+  .skillIcons {
+    display: block;
+
+    .oneSkill {
+      width: 100%;
+    }
+  }
+
+  .contact .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .connect {
+    width: 100%;
+    margin: 0;
+    border: none;
+    height: 150px;
+  }
+
+  form {
+    width: 100%;
+
+    .form{
+      // display: block;
+      
+      .oneInput {
+        width: 50%;
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+    
+    button {
+      width: 200px;
+    }
+  }
 }
