@@ -5,7 +5,8 @@
   margin: 50px 100px;
   border-radius: 20px;
   box-shadow: 0 0 20px variables.$darkOrange;
-  background: white;
+  background: variables.$purple;
+  color: variables.$white;
   
   img {
     width: 50%;
@@ -22,6 +23,11 @@
 
     p {
       text-align: justify;
+    }
+
+    .programmingLanguage {
+      padding: 0;
+      color: variables.$grey;
     }
 
     .buttons {
