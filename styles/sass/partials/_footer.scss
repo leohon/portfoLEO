@@ -1,7 +1,7 @@
 @use './variables';
 
 footer {
-  background-color: variables.$black;
+  background-color: variables.$purple;
   color: variables.$white;
   padding: 10px 0;
 
@@ -10,7 +10,7 @@ footer {
 
     span {
       text-transform: uppercase;
-      color: variables.$orange;
+      color: variables.$darkOrange;
     }
 
     a {

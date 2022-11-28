@@ -1,8 +1,6 @@
 @use './variables';
 
 .about {
-  // background: linear-gradient(variables.$purple, #304ffe);
-
   p {
     text-align: justify;
     border: 5px solid variables.$black;

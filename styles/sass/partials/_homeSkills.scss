@@ -1,7 +1,7 @@
 @use './variables';
 
 .skills {
-  // background: linear-gradient(variables.$white, variables.$green);
+  background-color: variables.$pink;
 }
 
 .skillIcons {
@@ -25,7 +25,7 @@
       }
     }
       
-    h3 {
+    h4 {
       margin-top: 20px;
       margin-left: 10px;
     }

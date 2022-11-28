@@ -1,14 +1,10 @@
 @use './variables';
 
-.projects {
-  // background: linear-gradient(purple, white, purple);
-}
-
 .oneProject {
   display: flex;
   margin: 50px 100px;
   border-radius: 20px;
-  box-shadow: 0 0 20px variables.$orange;
+  box-shadow: 0 0 20px variables.$darkOrange;
   background: white;
   
   img {
@@ -34,8 +30,8 @@
       .button {
         text-decoration: none;
         text-align: center;
-        background-color: variables.$purple;
-        color: variables.$white;
+        background: linear-gradient(variables.$gold, variables.$darkOrange);
+        color: variables.$black;
         padding: 20px;
         margin: 10px 20px 10px 0;
         width: 100px;

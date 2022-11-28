@@ -31,20 +31,21 @@
   <main>
     <!-- About Section -->
     <section class="about" id="about">
-      <h2>About</h2>
-
       <div class="wrapper">
+        <h2>About</h2>
         <p>I am a Web Developer with a background in Computer Science. I just completed Juno College's Web Development Bootcamp where I built upon my knowledge and skills of HTML, CSS, JavaScript, & React to build responsive websites. I also have previous experience as a part-time Web Designer/Developer where I used my analytical skills and the attention to detail to redesign and improve upon their website. My passion for programming comes from creating & discussing designs with others, troubleshooting, and visibly see the results I produce.</p>
       </div>
     </section>
     
     <!-- Project Section -->
     <section class="projects" id="projects">
-      <h2>Projects</h2>
-
       <div class="wrapper">
+        <h2>Projects</h2>
+
         <!-- Juno Project 2 -->
-        <div class="oneProject">
+        <div class="oneProject imgRight">
+          <img src="./styles/sass/assets/projectTwo.jpg" alt="Recipe Rescue App page">
+
           <div class="info">
             <h3>Recipe Rescue App</h3>
             <p>Have some ingredients lying around in your fridge? Don't know how to use them to make a dish? Then <b>Recipe Rescue</b> is at your service.</p>
@@ -53,8 +54,6 @@
               <a href="https://github.com/recipeRescueApp/recipeRescueApp" class="button">Code</a>
             </div>
           </div>
-
-          <img src="./styles/sass/assets/projectTwo.jpg" alt="Recipe Rescue App page">
         </div>
 
         <!-- Juno Assignment 2 -->
@@ -72,7 +71,9 @@
         </div>
         
         <!-- Juno Project 1 -->
-        <div class="oneProject">
+        <div class="oneProject imgRight">
+          <img src="./styles/sass/assets/projectOne.jpg" alt="Homepage of Textilee website">
+
           <div class="info">
             <h3>Textilee</h3>
             <p>This is Project 1 from <a href="https://junocollege.com/">Juno College</a> where I created a multi-page website for <b>Textilee</b>  based on a provided design.</p>
@@ -81,8 +82,6 @@
               <a href="https://github.com/leohon/leo-hon-project-one" class="button">Code</a>
             </div>
           </div>
-          
-          <img src="./styles/sass/assets/projectOne.jpg" alt="Homepage of Textilee website">
         </div>
 
         <!-- Juno Assignment 1 -->
@@ -103,16 +102,16 @@
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-      <h2>Implemented Skills</h2>
-
       <div class="wrapper">
+        <h2>Implemented Skills</h2>
+
         <div class="skillIcons">
           <!-- HTML -->
           <div class="oneSkill">
             <div class="icon">
               <i class="fa-brands fa-html5"></i>
             </div>
-            <h3>HTML</h3>
+            <h4>HTML</h4>
           </div>
 
           <!-- CSS -->
@@ -120,7 +119,7 @@
             <div class="icon">
               <i class="fa-brands fa-css3-alt"></i>
             </div>
-            <h3>CSS</h3>
+            <h4>CSS</h4>
           </div>
 
           <!-- SASS -->
@@ -128,7 +127,7 @@
             <div class="icon">
                <i class="fa-brands fa-sass"></i>
             </div>
-            <h3>SASS</h3>
+            <h4>SASS</h4>
           </div>
 
           <!-- JS -->
@@ -136,7 +135,7 @@
             <div class="icon">
               <i class="fa-brands fa-square-js"></i>
             </div>
-            <h3>JAVASCRIPT</h3>
+            <h4>JAVASCRIPT</h4>
           </div>
 
           <!-- Github -->
@@ -144,7 +143,7 @@
             <div class="icon">
               <i class="fa-brands fa-github"></i>
             </div>
-            <h3>GITHUB</h3>
+            <h4>GITHUB</h4>
           </div>
         </div>
       </div>
@@ -152,50 +151,52 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2>Contact</h2>
-      
       <div class="wrapper">
-        <!-- Form -->
-        <form action="#contact" method="#" name="contactForm">
-          <div class="form">
-            <div class="oneInput">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required>
+        <h2>Contact</h2>
+        
+        <div class="content">
+          <!-- Form -->
+          <form action="#contact" method="#" name="contactForm">
+            <div class="form">
+              <div class="oneInput">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              
+              <div class="oneInput">
+                <label for="phone">Phone #</label>
+                <input type="tel" name="phone" id="phone" required>
+              </div>
+              
+              <div class="oneInput">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+              
+              <div class="oneInput">
+                <label for="comment">Comment</label>
+                <input type="textarea" name="comment" id="comment" >
+              </div>
             </div>
             
-            <div class="oneInput">
-              <label for="phone">Phone #</label>
-              <input type="tel" name="phone" id="phone" required>
-            </div>
-            
-            <div class="oneInput">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required>
-            </div>
-            
-            <div class="oneInput">
-              <label for="comment">Comment</label>
-              <input type="textarea" name="comment" id="comment" >
-            </div>
-          </div>
-          
-          <button type="submit" class="formButton">Get In Touch</button>
-        </form>
+            <button type="submit" class="formButton">Get In Touch</button>
+          </form>
 
-        <!-- Ways to connect -->
-        <div class="connect">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          <!-- Ways to connect -->
+          <div class="connect">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 
-          <div>
-            <a href="https://www.linkedin.com/in/leo-hon/">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/leohon">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:leohon@hotmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
+            <div>
+              <a href="https://www.linkedin.com/in/leo-hon/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/leohon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:leohon@hotmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

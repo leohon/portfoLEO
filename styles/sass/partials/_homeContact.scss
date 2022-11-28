@@ -1,75 +1,81 @@
 @use './variables';
 
 .contact {
-  // background-color: variables.$green;
+  background: linear-gradient(variables.$pink, variables.$purple);
 
-  .wrapper {
+  .content {
     display: flex;
-  }
-  
-}
 
-form {
-  width: 75%;
-  text-align: center;
-  
-  .form {
-    display: flex;
-    flex-wrap: wrap;
-    
-    .oneInput {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      padding: 20px;
-
-      label {
-        text-align: left;
-        margin-bottom: 10px;
-      }
+    form {
+      width: 70%;
+      text-align: center;
+      margin-right: 50px;
+      margin-top: 25px;
       
-      input {
-        border: none;
-        border-bottom: 1px solid variables.$black;
-        width: 25vw;
+      .form {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        background-color: variables.$blue;
+        
+        .oneInput {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          padding: 20px;
+
+          label {
+            text-align: left;
+            margin-bottom: 10px;
+          }
+          
+          input {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 25vw;
+          }
+        }
+      }
+
+      button {
+        background-color: variables.$blue;
+        background: linear-gradient(variables.$blue, variables.$purple);
+        color: variables.$white;
+        padding: 20px;
+        margin: 10px 20px;
+        width: 300px;
+        border-radius: 15px;
+        cursor: pointer;
       }
     }
-  }
 
-  button {
-    background-color: variables.$purple;
-    color: variables.$white;
-    padding: 20px;
-    margin: 10px 20px;
-    width: 300px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-}
+    .connect {
+      display: flex;
+      flex-direction: column;
+      border: 5px dotted black;
+      border-radius: 30px;
+      height: 211px;
+      width: 25%;
+      text-align: center;
+      background-color: variables.$blue;
+      margin-top: 25px;
 
-.connect {
-  display: flex;
-  flex-direction: column;
-  border: 5px dotted black;
-  border-radius: 30px;
-  height: 200px;
-  width: 25%;
-  text-align: center;
-
-  p {
-    padding: 20px;
-    text-align: left;
-  }
-  
-  a {
-    margin: 0 25px;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    
-    i {
-      font-size: 2rem;
-      color: variables.$black;
+      p {
+        padding: 20px;
+        text-align: left;
+      }
+      
+      a {
+        margin: 0 25px;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        
+        i {
+          font-size: 2rem;
+          color: variables.$black;
+        }
+      }
     }
   }
 }
