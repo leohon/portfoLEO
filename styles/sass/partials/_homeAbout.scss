@@ -1,11 +1,9 @@
 @use './variables';
 
-.about {
-  p {
-    text-align: justify;
-    border: 5px solid variables.$black;
-    border-radius: 15px;
-    padding: 25px 50px;
-    margin-top: 10px;
-  }
+.about p {
+  text-align: justify;
+  border: 5px solid variables.$black;
+  border-radius: 15px;
+  padding: 25px 50px;
+  margin-top: 10px;
 } 

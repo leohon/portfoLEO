@@ -506,6 +506,7 @@ footer p span {
 footer p a {
   color: white;
 }
+
 @media (max-width: 1400px) {
   header .wrapper {
     height: 100%;
