@@ -291,21 +291,27 @@ header .wrapper h1, header .wrapper h3 {
 
 nav {
   background-color: darkviolet;
-}
-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 25%;
+}
+nav .hamburgerMenu {
+  display: none;
+}
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 450px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-nav ul li {
+nav .menu li {
   list-style: none;
   padding: 20px;
 }
-nav ul li a {
+nav .menu li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -517,11 +523,17 @@ footer p a {
 }
 
 @media (max-width: 1400px) {
+  header .menu {
+    margin: 0 400px;
+  }
   header .wrapper {
     height: 100%;
   }
 }
 @media (max-width: 1200px) {
+  header .menu {
+    margin: 0 300px;
+  }
   header .wrapper {
     padding-top: 200px;
   }
@@ -536,6 +548,9 @@ footer p a {
   }
 }
 @media (max-width: 1000px) {
+  header .menu {
+    margin: 0 200px;
+  }
   header .wrapper {
     padding: 100px 0;
   }
@@ -559,6 +574,9 @@ footer p a {
   html {
     font-size: 100%;
   }
+  header .menu {
+    margin: 0 100px;
+  }
   .skillIcons {
     padding: 15px 0;
   }
@@ -570,6 +588,12 @@ footer p a {
   }
 }
 @media (max-width: 600px) {
+  header .menu {
+    margin: 0 25px;
+  }
+  header .menu li {
+    padding: 20px 15px;
+  }
   header .wrapper {
     padding: 50px 0;
   }
@@ -598,6 +622,33 @@ footer p a {
   }
 }
 @media (max-width: 450px) {
+  header .menu {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  header .showMenu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header nav .hamburgerMenu {
+    display: block;
+    margin-left: 10px;
+    background-color: darkviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  header nav .hamburgerMenu .fa-solid.fa-bars {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+  header nav .hamburgerMenu .fa-solid.fa-xmark {
+    display: none;
+  }
   header .wrapper {
     padding: 25px 0;
   }

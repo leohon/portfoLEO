@@ -1,12 +1,29 @@
+@use './variables';
+
+// -------------------------
 @media (max-width: 1400px) {
-  header .wrapper {
-    height: 100%;
+  header {
+    .menu {
+      margin: 0 400px;
+    }
+
+    .wrapper {
+      height: 100%;
+    } 
   }
 }
 
+// -------------------------
+// Regular screens
 @media (max-width: 1200px) {
-  header .wrapper {
-    padding-top: 200px;
+  header {
+    .menu {
+      margin: 0 300px;
+    }
+
+    .wrapper {
+      padding-top: 200px;
+    }
   }
 
   .oneProject {
@@ -24,16 +41,23 @@
   }
 }
 
+// -------------------------
 @media (max-width: 1000px) {
-  header .wrapper {
-    padding: 100px 0;
-
-    h1 {
-      font-size: 2.5rem;
+  header{
+    .menu {
+      margin: 0 200px;
     }
+    
+    .wrapper {
+      padding: 100px 0;
 
-    h3 {
-      font-size: 1.5rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -50,9 +74,15 @@
   }
 }
 
+// -------------------------
+// Half of my screen size
 @media (max-width: 800px) {
   html {
     font-size: 100%;
+  }
+
+  header .menu {
+    margin: 0 100px;
   }
   
   .skillIcons {
@@ -68,18 +98,30 @@
   }
 }
 
+// -------------------------
+// Tablet / half of usual screen size
 @media (max-width: 600px) {
-  header .wrapper {
-    padding: 50px 0;
+  header {
+    .menu {
+      margin: 0 25px;
 
-    h1 {
-      padding-left: 0;
-      font-size: 2rem;
+      li {
+        padding: 20px 15px;
+      }
     }
 
-    h3 {
-      padding-left: 0;
-      font-size: 1rem;
+   .wrapper {
+      padding: 50px 0;
+
+      h1 {
+        padding-left: 0;
+        font-size: 2rem;
+      }
+
+      h3 {
+        padding-left: 0;
+        font-size: 1rem;
+      }
     }
   }
 
@@ -104,9 +146,38 @@
   }
 }
 
+// -------------------------
+// Mobile
 @media (max-width: 450px) {
-  header .wrapper {
-    padding: 25px 0;
+  header {
+    .menu {
+      transform: translateX(-150%);
+      transition: transform 0.5s;
+    }
+    
+    .showMenu {
+      transform: translateX(0);
+    }
+    nav .hamburgerMenu {
+      display: block;
+      margin-left: 10px;
+      background-color: variables.$purple;
+      color: variables.$white;
+      border: none;
+      cursor: pointer;
+
+      .fa-solid.fa-bars {
+        font-size: 2rem;
+        padding-top: 10px;
+      }
+      .fa-solid.fa-xmark {
+        display: none;
+      }
+    }
+
+    .wrapper {
+      padding: 25px 0;
+    } 
   }
 
   .skillIcons {

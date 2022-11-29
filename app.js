@@ -1,3 +1,28 @@
+// nav hamburger menu
+const hamburger = document.querySelector(".hamburgerMenu");
+const openIcon = document.querySelector(".fa-solid.fa-bars");
+const closeIcon= document.querySelector(".fa-solid.fa-xmark");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", function() {
+  // Open menu
+  if (!menu.classList.contains("showMenu")) {
+    menu.classList.add("showMenu");
+    openIcon.style.display = "none";
+    menu.style.display = "block";
+    closeIcon.style.display = "block";
+    closeIcon.style.fontSize = "2rem";
+    closeIcon.style.paddingTop = "10px";
+  } 
+  // Close menu
+  else {
+    menu.classList.remove("showMenu");
+    openIcon.style.display = "block";
+    menu.style.display = "flex";
+    closeIcon.style.display = "none";
+  }
+});
+
 // Alert for non-live projects
 const liveEl = document.querySelectorAll('#notLive');
 
@@ -25,11 +50,10 @@ const phoneEl = document.querySelector('#phone');
 const emailEl = document.querySelector('#email');
 const messageEl = document.querySelector('#message');
 const buttonEl = document.querySelector('.formButton');
-const formEl = document.querySelector('form')
-console.log(nameEl)
+const formEl = document.querySelector('form');
 
 buttonEl.addEventListener('click', function(event) {
-  event.preventDefault;
+  event.preventDefault();
 
   const name = nameEl.value;
   const phone = phoneEl.value;
@@ -37,7 +61,7 @@ buttonEl.addEventListener('click', function(event) {
   const message = messageEl.value;
 
   if (name && phone && email && message) {
-    formEl.innerHTML = `Thanks for reaching out!`
+    formEl.innerHTML = `Thanks for reaching out!`;
     formEl.style.fontSize = "2rem";
     formEl.style.paddingTop = "100px";
     formEl.style.color = "gold";
