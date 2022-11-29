@@ -1,5 +1,16 @@
+// TODO: add font familys
+@use './variables';
+
 html {
   font-size: 125%;
+}
+
+h1, h2, h3 {
+  font-family: variables.$bitter;
+}
+
+h4, p, label, button, .button, li, .connect h3 {
+  font-family: variables.$poppins;
 }
 
 p {

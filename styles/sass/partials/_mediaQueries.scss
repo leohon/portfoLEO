@@ -82,7 +82,7 @@
   }
 
   header .menu {
-    margin: 0 100px;
+    margin: 0 150px;
   }
   
   .skillIcons {
@@ -103,7 +103,7 @@
 @media (max-width: 600px) {
   header {
     .menu {
-      margin: 0 25px;
+      margin: 0 50px;
 
       li {
         padding: 20px 15px;
@@ -150,6 +150,7 @@
 // Mobile
 @media (max-width: 450px) {
   header {
+    // Hamburger menu SOURCE: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
     .menu {
       transform: translateX(-150%);
       transition: transform 0.5s;
@@ -158,10 +159,10 @@
     .showMenu {
       transform: translateX(0);
     }
+
     nav .hamburgerMenu {
       display: block;
       margin-left: 10px;
-      background-color: variables.$purple;
       color: variables.$white;
       border: none;
       cursor: pointer;
@@ -170,6 +171,7 @@
         font-size: 2rem;
         padding-top: 10px;
       }
+      
       .fa-solid.fa-xmark {
         display: none;
       }
@@ -178,6 +180,10 @@
     .wrapper {
       padding: 25px 0;
     } 
+  }
+
+  .about p {
+    text-align: center;
   }
 
   .skillIcons {
@@ -207,14 +213,11 @@
     form {
       width: 100%;
       
-      .form{
+      .form .oneInput {
+        width: 50%;
         
-        .oneInput {
-          width: 50%;
-          
-          input {
-            width: 100%;
-          }
+        input {
+          width: 100%;
         }
       }
       

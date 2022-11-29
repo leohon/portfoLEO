@@ -1,25 +1,26 @@
-// nav hamburger menu
-const hamburger = document.querySelector(".hamburgerMenu");
-const openIcon = document.querySelector(".fa-solid.fa-bars");
-const closeIcon= document.querySelector(".fa-solid.fa-xmark");
+// Nav hamburger menu
+// SOURCE: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburgerMenu");
+const open = document.querySelector(".fa-solid.fa-bars");
+const close = document.querySelector(".fa-solid.fa-xmark");
 
 hamburger.addEventListener("click", function() {
   // Open menu
   if (!menu.classList.contains("showMenu")) {
     menu.classList.add("showMenu");
-    openIcon.style.display = "none";
+    open.style.display = "none";
+    close.style.display = "block";
+    close.style.fontSize = "2rem";
+    close.style.paddingTop = "10px";
     menu.style.display = "block";
-    closeIcon.style.display = "block";
-    closeIcon.style.fontSize = "2rem";
-    closeIcon.style.paddingTop = "10px";
   } 
   // Close menu
   else {
     menu.classList.remove("showMenu");
-    openIcon.style.display = "block";
+    open.style.display = "block";
+    close.style.display = "none";
     menu.style.display = "flex";
-    closeIcon.style.display = "none";
   }
 });
 
@@ -33,6 +34,7 @@ liveEl.forEach(function(button) {
 })
 
 // Enlarge skills icons on mouse over
+// Stretch goal - grey to black & zoom on mouseover
 const iconEl = document.querySelectorAll('.icon i');
 
 iconEl.forEach(function(icon) {

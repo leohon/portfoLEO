@@ -253,6 +253,14 @@ html {
   font-size: 125%;
 }
 
+h1, h2, h3 {
+  font-family: "Bitter", sans-serif;
+}
+
+h4, p, label, button, .button, li, .connect h3 {
+  font-family: "Poppins", sans-serif;
+}
+
 p {
   line-height: 1.5rem;
 }
@@ -370,7 +378,7 @@ nav .menu li a {
   width: 100px;
   border-radius: 30px;
 }
-.oneProject .info b {
+.oneProject .info span {
   text-transform: uppercase;
 }
 
@@ -489,7 +497,6 @@ nav .menu li a {
 }
 .contact .content .connect h3 {
   padding: 30px 10px;
-  text-align: center;
   text-transform: uppercase;
 }
 .contact .content .connect .socials {
@@ -575,7 +582,7 @@ footer p a {
     font-size: 100%;
   }
   header .menu {
-    margin: 0 100px;
+    margin: 0 150px;
   }
   .skillIcons {
     padding: 15px 0;
@@ -589,7 +596,7 @@ footer p a {
 }
 @media (max-width: 600px) {
   header .menu {
-    margin: 0 25px;
+    margin: 0 50px;
   }
   header .menu li {
     padding: 20px 15px;
@@ -637,7 +644,6 @@ footer p a {
   header nav .hamburgerMenu {
     display: block;
     margin-left: 10px;
-    background-color: darkviolet;
     color: white;
     border: none;
     cursor: pointer;
@@ -651,6 +657,9 @@ footer p a {
   }
   header .wrapper {
     padding: 25px 0;
+  }
+  .about p {
+    text-align: center;
   }
   .skillIcons {
     display: block;
