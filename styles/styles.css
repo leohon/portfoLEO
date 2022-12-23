@@ -335,7 +335,8 @@ nav .menu li a:hover {
   border: 5px solid black;
   border-radius: 15px;
   padding: 25px 50px;
-  margin-top: 10px;
+  margin: 10px auto;
+  width: 75%;
 }
 
 .oneProject {
@@ -423,6 +424,9 @@ nav .menu li a:hover {
 }
 .skillIcons .oneSkill .icon i {
   font-size: 3rem;
+}
+.skillIcons .oneSkill .icon img {
+  width: 3rem;
 }
 .skillIcons .oneSkill h4 {
   margin-top: 20px;
