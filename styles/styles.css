@@ -314,6 +314,7 @@ nav .menu {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
 }
 nav .menu li {
   list-style: none;
@@ -323,6 +324,10 @@ nav .menu li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+nav .menu li a:hover {
+  -webkit-text-decoration: underline 3px darkorange;
+          text-decoration: underline 3px darkorange;
 }
 
 .about p {
@@ -466,7 +471,6 @@ nav .menu li a {
 .contact .content form .form .oneInput input {
   border: none;
   border-bottom: 2px solid black;
-  width: 25vw;
   background-color: cornflowerblue;
 }
 .contact .content form button {
