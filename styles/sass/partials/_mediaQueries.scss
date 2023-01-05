@@ -61,6 +61,12 @@
     }
   }
 
+  .aboutInfo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+  }
+
   .oneProject {
     margin: 50px 0;
   }
@@ -83,6 +89,20 @@
 
   header .menu {
     margin: 0 150px;
+  }
+
+  .aboutInfo {
+    display: block;
+    text-align: center;
+
+    img {
+      margin: 0;
+    }
+
+    p {
+      width: 90%;
+      margin: 10px auto;
+    }
   }
   
   .skillIcons {
@@ -125,7 +145,7 @@
     }
   }
 
-  .about p {
+  .aboutInfo p {
     padding: 25px;
   }
 
@@ -182,8 +202,11 @@
     } 
   }
 
-  .about p {
+  .aboutInfo p {
     text-align: center;
+    width: 100%;
+    padding: 0;
+    border: none;
   }
 
   .skillIcons {

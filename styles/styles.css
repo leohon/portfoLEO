@@ -330,13 +330,24 @@ nav .menu li a:hover {
           text-decoration: underline 3px darkorange;
 }
 
-.about p {
+.aboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 25px;
+}
+.aboutInfo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 25px;
+}
+.aboutInfo p {
+  width: 75%;
   text-align: justify;
   border: 5px solid black;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 25px 50px;
-  margin: 10px auto;
-  width: 75%;
 }
 
 .oneProject {
@@ -575,6 +586,11 @@ footer p a {
   header .wrapper h3 {
     font-size: 1.5rem;
   }
+  .aboutInfo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+  }
   .oneProject {
     margin: 50px 0;
   }
@@ -591,6 +607,17 @@ footer p a {
   }
   header .menu {
     margin: 0 150px;
+  }
+  .aboutInfo {
+    display: block;
+    text-align: center;
+  }
+  .aboutInfo img {
+    margin: 0;
+  }
+  .aboutInfo p {
+    width: 90%;
+    margin: 10px auto;
   }
   .skillIcons {
     padding: 15px 0;
@@ -620,7 +647,7 @@ footer p a {
     padding-left: 0;
     font-size: 1rem;
   }
-  .about p {
+  .aboutInfo p {
     padding: 25px;
   }
   .oneProject {
@@ -666,8 +693,11 @@ footer p a {
   header .wrapper {
     padding: 25px 0;
   }
-  .about p {
+  .aboutInfo p {
     text-align: center;
+    width: 100%;
+    padding: 0;
+    border: none;
   }
   .skillIcons {
     display: block;
