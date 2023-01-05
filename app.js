@@ -55,7 +55,6 @@ iconImgEl.forEach(function(icon) {
   });
 })
 
-
 // Reset form on page load after Formspree submit and 'Go back' clicked
 document.getElementById("name").value = "";
 document.getElementById("phone").value = "";

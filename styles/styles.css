@@ -395,6 +395,9 @@ nav .menu li a:hover {
   width: 100px;
   border-radius: 30px;
 }
+.oneProject .info .buttons #notLive {
+  text-decoration: line-through;
+}
 .oneProject .info span {
   text-transform: uppercase;
 }
