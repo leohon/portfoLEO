@@ -222,31 +222,26 @@
     
     .connect {
       width: 100%;
-      height: 150px;
+      height: 100px;
+      display: block;
 
-      .socials {
-        margin: 0;
-        
-        a {
-          margin: 0 25px;
+      a {
+        margin: 0 25px;
+
+        i {
+          margin-top: 30px;
         }
       }
     }
     
-    form {
+    form, 
+    form .form .oneInput, 
+    form .form .oneInput input {
       width: 100%;
+    }
       
-      .form .oneInput {
-        width: 50%;
-        
-        input {
-          width: 100%;
-        }
-      }
-      
-      button {
-        width: 200px;
-      }
+    form button {
+      width: 200px;
     }
   }
 }
