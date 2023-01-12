@@ -482,14 +482,35 @@ nav .menu li a:hover {
   width: 50%;
   padding: 30px;
 }
-.contact .content form .form .oneInput label {
-  text-align: left;
-  margin-bottom: 10px;
-}
 .contact .content form .form .oneInput input {
   border: none;
   border-bottom: 2px solid black;
   background-color: cornflowerblue;
+}
+.contact .content form .form .oneInput textarea {
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  height: 30px;
+}
+.contact .content form .form .oneInput input::-webkit-input-placeholder, .contact .content form .form .oneInput textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+.contact .content form .form .oneInput input::-moz-placeholder, .contact .content form .form .oneInput textarea::-moz-placeholder {
+  opacity: 1;
+  color: white;
+}
+.contact .content form .form .oneInput input:-ms-input-placeholder, .contact .content form .form .oneInput textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+.contact .content form .form .oneInput input::-ms-input-placeholder, .contact .content form .form .oneInput textarea::-ms-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+.contact .content form .form .oneInput input::placeholder, .contact .content form .form .oneInput textarea::placeholder {
+  opacity: 1;
+  color: white;
 }
 .contact .content form button {
   background: -webkit-gradient(linear, left top, left bottom, from(cornflowerblue), to(darkviolet));
@@ -654,9 +675,6 @@ footer p a {
   }
   .skillIcons .oneSkill {
     padding: 10px 25px;
-  }
-  .contact .content form .form .oneInput input {
-    width: 20vw;
   }
 }
 @media (max-width: 450px) {
