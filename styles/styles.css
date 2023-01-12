@@ -390,7 +390,7 @@ nav .menu li a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(gold), to(darkorange));
   background: linear-gradient(gold, darkorange);
   color: black;
-  padding: 20px;
+  padding: 15px;
   margin: 10px 20px 10px 0;
   width: 100px;
   border-radius: 30px;
