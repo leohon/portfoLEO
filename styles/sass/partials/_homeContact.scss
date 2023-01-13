@@ -31,10 +31,14 @@
             background-color: variables.$blue;
           }
 
+          #name {
+            text-transform: capitalize;
+          }
+
           textarea {
             border: 2px solid variables.$black;
             background-color: variables.$blue;
-            height: 30px;
+            height: 32px;
           }
 
           input::placeholder, textarea::placeholder {
