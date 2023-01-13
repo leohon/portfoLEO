@@ -104,6 +104,14 @@
       margin: 10px auto;
     }
   }
+
+  .oneProject {
+    display: block;
+
+    img, .info {
+      width: 100%;
+    }
+  }
   
   .skillIcons {
     padding: 15px 0;
@@ -149,20 +157,37 @@
     padding: 25px;
   }
 
-  .oneProject {
-    display: block;
-
-    img, .info {
-      width: 100%;
-    }
-  }
-
   .skillIcons .oneSkill {
-    padding: 10px 25px;
+    width: 50%;
+    padding: 20px;
   }
 
-  .contact .content form .form .oneInput input {
-    // width: 20vw;
+  .contact .content {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .connect {
+      width: 50%;
+      height: 50px;
+      display: block;
+
+      a {
+        margin: 0 15px;
+
+        i {
+          margin-top: 10px;
+        }
+      }
+    }
+    
+    form {
+      width: 100%;
+      margin-right: 0;
+      
+      .form .oneInput {
+        padding: 20px;
+      }
+    }
   }
 }
 
@@ -217,30 +242,17 @@
     }
   }
 
-  .contact .content {
-    flex-direction: column-reverse;
-    
-    .connect {
+  .contact .content form { 
+    .form .oneInput, 
+    .form .oneInput input {
       width: 100%;
-      height: 100px;
-      display: block;
-
-      a {
-        margin: 0 25px;
-
-        i {
-          margin-top: 30px;
-        }
-      }
     }
-    
-    form, 
-    form .form .oneInput, 
-    form .form .oneInput input {
-      width: 100%;
+
+    .form .oneInput textarea {
+      height: 5em;
     }
       
-    form button {
+    button {
       width: 200px;
     }
   }

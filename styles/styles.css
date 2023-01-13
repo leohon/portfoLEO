@@ -487,10 +487,13 @@ nav .menu li a:hover {
   border-bottom: 2px solid black;
   background-color: cornflowerblue;
 }
+.contact .content form .form .oneInput #name {
+  text-transform: capitalize;
+}
 .contact .content form .form .oneInput textarea {
   border: 2px solid black;
   background-color: cornflowerblue;
-  height: 30px;
+  height: 32px;
 }
 .contact .content form .form .oneInput input::-webkit-input-placeholder, .contact .content form .form .oneInput textarea::-webkit-input-placeholder {
   opacity: 1;
@@ -636,6 +639,12 @@ footer p a {
     width: 90%;
     margin: 10px auto;
   }
+  .oneProject {
+    display: block;
+  }
+  .oneProject img, .oneProject .info {
+    width: 100%;
+  }
   .skillIcons {
     padding: 15px 0;
   }
@@ -667,14 +676,36 @@ footer p a {
   .aboutInfo p {
     padding: 25px;
   }
-  .oneProject {
+  .skillIcons .oneSkill {
+    width: 50%;
+    padding: 20px;
+  }
+  .contact .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .content .connect {
+    width: 50%;
+    height: 50px;
     display: block;
   }
-  .oneProject img, .oneProject .info {
-    width: 100%;
+  .contact .content .connect a {
+    margin: 0 15px;
   }
-  .skillIcons .oneSkill {
-    padding: 10px 25px;
+  .contact .content .connect a i {
+    margin-top: 10px;
+  }
+  .contact .content form {
+    width: 100%;
+    margin-right: 0;
+  }
+  .contact .content form .form .oneInput {
+    padding: 20px;
   }
 }
 @media (max-width: 450px) {
@@ -719,27 +750,12 @@ footer p a {
   .skillIcons .oneSkill {
     width: 100%;
   }
-  .contact .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .contact .content .connect {
-    width: 100%;
-    height: 100px;
-    display: block;
-  }
-  .contact .content .connect a {
-    margin: 0 25px;
-  }
-  .contact .content .connect a i {
-    margin-top: 30px;
-  }
-  .contact .content form,
-.contact .content form .form .oneInput,
+  .contact .content form .form .oneInput,
 .contact .content form .form .oneInput input {
     width: 100%;
+  }
+  .contact .content form .form .oneInput textarea {
+    height: 5em;
   }
   .contact .content form button {
     width: 200px;
