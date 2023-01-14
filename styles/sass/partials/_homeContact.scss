@@ -22,8 +22,8 @@
         .oneInput {
           display: flex;
           flex-direction: column;
-          width: 50%;
-          padding: 30px;
+          width: 33%;
+          padding: 20px;
           
           input {
             border: none;
@@ -38,13 +38,17 @@
           textarea {
             border: 2px solid variables.$black;
             background-color: variables.$blue;
-            height: 32px;
+            height: 5em;
           }
 
           input::placeholder, textarea::placeholder {
             opacity: 1;
             color: variables.$white;
           } 
+        }
+
+        .oneInput.message {
+          width: 100%;
         }
       }
 
@@ -65,14 +69,14 @@
       flex-direction: column;
       border: none;
       border-radius: 25px;
-      height: 250px;
+      height: 207px;
       width: 15%;
       text-align: center;
       background-color: variables.$blue;
       margin-top: 25px;
 
       a {
-        margin: 20px auto;
+        margin: 10px auto;
         width: 50px;
         height: 50px;
         text-decoration: none;

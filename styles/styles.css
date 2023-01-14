@@ -479,8 +479,8 @@ nav .menu li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
-  padding: 30px;
+  width: 33%;
+  padding: 20px;
 }
 .contact .content form .form .oneInput input {
   border: none;
@@ -493,7 +493,7 @@ nav .menu li a:hover {
 .contact .content form .form .oneInput textarea {
   border: 2px solid black;
   background-color: cornflowerblue;
-  height: 32px;
+  height: 5em;
 }
 .contact .content form .form .oneInput input::-webkit-input-placeholder, .contact .content form .form .oneInput textarea::-webkit-input-placeholder {
   opacity: 1;
@@ -515,6 +515,9 @@ nav .menu li a:hover {
   opacity: 1;
   color: white;
 }
+.contact .content form .form .oneInput.message {
+  width: 100%;
+}
 .contact .content form button {
   background: -webkit-gradient(linear, left top, left bottom, from(cornflowerblue), to(darkviolet));
   background: linear-gradient(cornflowerblue, darkviolet);
@@ -535,14 +538,14 @@ nav .menu li a:hover {
           flex-direction: column;
   border: none;
   border-radius: 25px;
-  height: 250px;
+  height: 207px;
   width: 15%;
   text-align: center;
   background-color: cornflowerblue;
   margin-top: 25px;
 }
 .contact .content .connect a {
-  margin: 20px auto;
+  margin: 10px auto;
   width: 50px;
   height: 50px;
   text-decoration: none;
@@ -649,7 +652,7 @@ footer p a {
     padding: 15px 0;
   }
   .contact .content .connect {
-    height: 230px;
+    height: 182px;
   }
   .contact .content .connect .socials a {
     margin: 0;
@@ -690,7 +693,7 @@ footer p a {
             align-items: center;
   }
   .contact .content .connect {
-    width: 50%;
+    width: 75%;
     height: 50px;
     display: block;
   }
@@ -703,9 +706,6 @@ footer p a {
   .contact .content form {
     width: 100%;
     margin-right: 0;
-  }
-  .contact .content form .form .oneInput {
-    padding: 20px;
   }
 }
 @media (max-width: 450px) {
@@ -753,9 +753,6 @@ footer p a {
   .contact .content form .form .oneInput,
 .contact .content form .form .oneInput input {
     width: 100%;
-  }
-  .contact .content form .form .oneInput textarea {
-    height: 5em;
   }
   .contact .content form button {
     width: 200px;
