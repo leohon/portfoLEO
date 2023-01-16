@@ -298,7 +298,7 @@ header .wrapper h1, header .wrapper h3 {
 }
 
 nav {
-  background-color: darkviolet;
+  background-color: #71499d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,7 +358,7 @@ nav .menu li a:hover {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 20px darkorange;
           box-shadow: 0 0 20px darkorange;
-  background: darkviolet;
+  background: #71499d;
   color: white;
 }
 .oneProject img {
@@ -448,8 +448,8 @@ nav .menu li a:hover {
 }
 
 .contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(darkviolet));
-  background: linear-gradient(pink, darkviolet);
+  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(#71499d));
+  background: linear-gradient(pink, #71499d);
 }
 .contact .content {
   display: -webkit-box;
@@ -519,8 +519,8 @@ nav .menu li a:hover {
   width: 100%;
 }
 .contact .content form button {
-  background: -webkit-gradient(linear, left top, left bottom, from(cornflowerblue), to(darkviolet));
-  background: linear-gradient(cornflowerblue, darkviolet);
+  background: -webkit-gradient(linear, left top, left bottom, from(cornflowerblue), to(#71499d));
+  background: linear-gradient(cornflowerblue, #71499d);
   color: white;
   padding: 20px;
   margin: 20px;
@@ -556,7 +556,7 @@ nav .menu li a:hover {
 }
 
 footer {
-  background-color: darkviolet;
+  background-color: #71499d;
   color: white;
   padding: 25px 0;
 }
