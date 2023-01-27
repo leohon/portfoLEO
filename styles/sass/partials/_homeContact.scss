@@ -16,7 +16,6 @@
       .form {
         display: flex;
         flex-wrap: wrap;
-        background-color: variables.$blue;
         border-radius: 25px;
         
         .oneInput {
@@ -28,7 +27,7 @@
           input {
             border: none;
             border-bottom: 2px solid variables.$black;
-            background-color: variables.$blue;
+            background: transparent;
           }
 
           #name {
@@ -37,13 +36,12 @@
 
           textarea {
             border: 2px solid variables.$black;
-            background-color: variables.$blue;
+            background: transparent;
             height: 5em;
           }
 
           input::placeholder, textarea::placeholder {
             opacity: 1;
-            color: variables.$white;
           } 
         }
 
@@ -72,7 +70,6 @@
       height: 207px;
       width: 15%;
       text-align: center;
-      background-color: variables.$blue;
       margin-top: 25px;
 
       a {
@@ -83,7 +80,7 @@
         
         i {
           font-size: 2rem;
-          color: variables.$gold;
+          color: variables.$black;
         }
       }
     }

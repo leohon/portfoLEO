@@ -4,6 +4,8 @@ footer {
   background-color: variables.$purple;
   color: variables.$white;
   padding: 25px 0;
+  text-align: right;
+  display: flex;
 
   p {
     text-align: center;
@@ -15,6 +17,21 @@ footer {
 
     a {
       color: variables.$white;
+    }
+  }
+
+  a {
+    color: variables.$white;
+    padding-right: 50px;
+    text-align: center;
+    
+    i {
+      font-size: 2rem;
+      background-color: variables.$black;
+      padding-top: 5px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
     }
   }
 }

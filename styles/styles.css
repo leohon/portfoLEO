@@ -285,16 +285,27 @@ header {
   background-image: url("./sass/assets/header.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  text-align: center;
 }
 header .wrapper {
-  padding-top: 300px;
-  padding-bottom: 200px;
-  height: 100vh;
+  padding: 200px 0;
+  height: 80vh;
+  text-align: left;
 }
 header .wrapper h1, header .wrapper h3 {
   text-transform: uppercase;
   color: darkorange;
   padding-left: 50px;
+}
+header a {
+  color: black;
+}
+header a i {
+  font-size: 2rem;
+  background-color: white;
+  padding-top: 5px;
+  width: 50px;
+  height: 50px;
 }
 
 nav {
@@ -396,7 +407,7 @@ nav .menu li a:hover {
   border-radius: 30px;
 }
 .oneProject .info .buttons #notLive {
-  text-decoration: line-through;
+  background: grey;
 }
 .oneProject .info span {
   text-transform: uppercase;
@@ -438,9 +449,21 @@ nav .menu li a:hover {
 }
 .skillIcons .oneSkill .icon i {
   font-size: 3rem;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .skillIcons .oneSkill .icon img {
   width: 3rem;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.skillIcons .oneSkill .icon i:hover, .skillIcons .oneSkill .icon img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 .skillIcons .oneSkill h4 {
   margin-top: 20px;
@@ -468,7 +491,6 @@ nav .menu li a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: cornflowerblue;
   border-radius: 25px;
 }
 .contact .content form .form .oneInput {
@@ -485,35 +507,30 @@ nav .menu li a:hover {
 .contact .content form .form .oneInput input {
   border: none;
   border-bottom: 2px solid black;
-  background-color: cornflowerblue;
+  background: transparent;
 }
 .contact .content form .form .oneInput #name {
   text-transform: capitalize;
 }
 .contact .content form .form .oneInput textarea {
   border: 2px solid black;
-  background-color: cornflowerblue;
+  background: transparent;
   height: 5em;
 }
 .contact .content form .form .oneInput input::-webkit-input-placeholder, .contact .content form .form .oneInput textarea::-webkit-input-placeholder {
   opacity: 1;
-  color: white;
 }
 .contact .content form .form .oneInput input::-moz-placeholder, .contact .content form .form .oneInput textarea::-moz-placeholder {
   opacity: 1;
-  color: white;
 }
 .contact .content form .form .oneInput input:-ms-input-placeholder, .contact .content form .form .oneInput textarea:-ms-input-placeholder {
   opacity: 1;
-  color: white;
 }
 .contact .content form .form .oneInput input::-ms-input-placeholder, .contact .content form .form .oneInput textarea::-ms-input-placeholder {
   opacity: 1;
-  color: white;
 }
 .contact .content form .form .oneInput input::placeholder, .contact .content form .form .oneInput textarea::placeholder {
   opacity: 1;
-  color: white;
 }
 .contact .content form .form .oneInput.message {
   width: 100%;
@@ -541,7 +558,6 @@ nav .menu li a:hover {
   height: 207px;
   width: 15%;
   text-align: center;
-  background-color: cornflowerblue;
   margin-top: 25px;
 }
 .contact .content .connect a {
@@ -552,13 +568,17 @@ nav .menu li a:hover {
 }
 .contact .content .connect a i {
   font-size: 2rem;
-  color: gold;
+  color: black;
 }
 
 footer {
   background-color: #71499d;
   color: white;
   padding: 25px 0;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 footer p {
   text-align: center;
@@ -569,6 +589,19 @@ footer p span {
 }
 footer p a {
   color: white;
+}
+footer a {
+  color: white;
+  padding-right: 50px;
+  text-align: center;
+}
+footer a i {
+  font-size: 2rem;
+  background-color: black;
+  padding-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }
 
 @media (max-width: 1400px) {
