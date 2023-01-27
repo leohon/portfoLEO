@@ -372,9 +372,14 @@ nav .menu li a:hover {
   background: #71499d;
   color: white;
 }
-.oneProject img {
+.oneProject a {
   width: 50%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.oneProject a img {
   border-radius: 20px;
+  height: 100%;
 }
 .oneProject .info {
   padding: 25px;
@@ -405,9 +410,11 @@ nav .menu li a:hover {
   margin: 10px 20px 10px 0;
   width: 100px;
   border-radius: 30px;
+  cursor: pointer;
 }
 .oneProject .info .buttons #notLive {
   background: grey;
+  cursor: not-allowed;
 }
 .oneProject .info span {
   text-transform: uppercase;
@@ -663,6 +670,9 @@ footer a i {
   }
   header .menu {
     margin: 0 150px;
+  }
+  header a i {
+    visibility: hidden;
   }
   .aboutInfo {
     display: block;

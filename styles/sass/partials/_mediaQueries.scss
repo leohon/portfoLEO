@@ -87,8 +87,14 @@
     font-size: 100%;
   }
 
-  header .menu {
-    margin: 0 150px;
+  header {
+    .menu {
+      margin: 0 150px;
+    }
+
+    a i {
+      visibility: hidden;
+    }
   }
 
   .aboutInfo {

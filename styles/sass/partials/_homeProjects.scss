@@ -13,9 +13,14 @@
   background: variables.$purple;
   color: variables.$white;
   
-  img {
+  a {
     width: 50%;
-    border-radius: 20px;
+    cursor: zoom-in;
+
+    img {
+      border-radius: 20px;
+      height: 100%;
+    }
   }
 
   .info {
@@ -47,10 +52,12 @@
         margin: 10px 20px 10px 0;
         width: 100px;
         border-radius: 30px;
+        cursor: pointer;
       }
 
       #notLive {
         background: grey;
+        cursor: not-allowed;
       }
     }
 
