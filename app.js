@@ -33,28 +33,6 @@ liveEl.forEach(function(button) {
   })
 })
 
-// Enlarge skills icons on mouse over
-// Stretch goal - grey to black & zoom on mouseover
-const iconEl = document.querySelectorAll('.icon i');
-const iconImgEl = document.querySelectorAll('.icon img');
-
-iconEl.forEach(function(icon) {
-  icon.addEventListener('mouseover', function() {
-    icon.style.fontSize = "5rem";
-  });
-  icon.addEventListener('mouseout', function() {
-    icon.style.fontSize = "3rem";
-  });
-})
-iconImgEl.forEach(function(icon) {
-  icon.addEventListener('mouseover', function() {
-    icon.style.width = "5rem";
-  });
-  icon.addEventListener('mouseout', function() {
-    icon.style.width = "3rem";
-  });
-})
-
 // Reset form on page load after Formspree submit and 'Go back' clicked
 document.getElementById("name").value = "";
 document.getElementById("phone").value = "";
