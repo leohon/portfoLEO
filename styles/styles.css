@@ -526,18 +526,23 @@ nav .menu li a:hover {
 }
 .contact .content form .form .oneInput input::-webkit-input-placeholder, .contact .content form .form .oneInput textarea::-webkit-input-placeholder {
   opacity: 1;
+  color: black;
 }
 .contact .content form .form .oneInput input::-moz-placeholder, .contact .content form .form .oneInput textarea::-moz-placeholder {
   opacity: 1;
+  color: black;
 }
 .contact .content form .form .oneInput input:-ms-input-placeholder, .contact .content form .form .oneInput textarea:-ms-input-placeholder {
   opacity: 1;
+  color: black;
 }
 .contact .content form .form .oneInput input::-ms-input-placeholder, .contact .content form .form .oneInput textarea::-ms-input-placeholder {
   opacity: 1;
+  color: black;
 }
 .contact .content form .form .oneInput input::placeholder, .contact .content form .form .oneInput textarea::placeholder {
   opacity: 1;
+  color: black;
 }
 .contact .content form .form .oneInput.message {
   width: 100%;
