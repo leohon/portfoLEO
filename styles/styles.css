@@ -226,6 +226,50 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.toTop {
+  color: white;
+  text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  -webkit-animation: bounceUp 2s infinite;
+          animation: bounceUp 2s infinite;
+}
+.toTop i {
+  font-size: 2rem;
+  background-color: black;
+  padding-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+@-webkit-keyframes bounceUp {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes bounceUp {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -289,7 +333,7 @@ header {
 }
 header .wrapper {
   padding: 200px 0;
-  height: 80vh;
+  height: 90vh;
   text-align: left;
 }
 header .wrapper h1, header .wrapper h3 {
@@ -297,15 +341,41 @@ header .wrapper h1, header .wrapper h3 {
   color: darkorange;
   padding-left: 50px;
 }
-header a {
+header .toContent {
+  display: initial;
   color: black;
+  position: fixed;
+  bottom: 0px;
+  -webkit-animation: bounceDown 2s infinite;
+          animation: bounceDown 2s infinite;
 }
-header a i {
+header .toContent i {
   font-size: 2rem;
   background-color: white;
   padding-top: 5px;
   width: 50px;
   height: 50px;
+  border-radius: 25px;
+}
+@-webkit-keyframes bounceDown {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes bounceDown {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
 }
 
 nav {
@@ -601,19 +671,6 @@ footer p span {
 }
 footer p a {
   color: white;
-}
-footer a {
-  color: white;
-  padding-right: 50px;
-  text-align: center;
-}
-footer a i {
-  font-size: 2rem;
-  background-color: black;
-  padding-top: 5px;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
 }
 
 @media (max-width: 1400px) {

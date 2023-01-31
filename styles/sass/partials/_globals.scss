@@ -1,3 +1,37 @@
+@use './variables';
+
+html {
+  scroll-behavior: smooth; 
+}
+
+.toTop {
+  color: variables.$white;
+  text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  animation: bounceUp 2s infinite;
+  
+  i {
+    font-size: 2rem;
+    background-color: variables.$black;
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+
+@keyframes bounceUp {
+    from {
+      transform: translateY(-15px);
+    }
+    to {
+      transform: translateY(-30px);
+    }
+  }
+
 .wrapper {
   max-width: 1260px;
   width: 90%;

@@ -24,6 +24,24 @@ hamburger.addEventListener("click", function() {
   }
 });
 
+// Scroll to content && scroll to top animation
+const toContentButton = document.querySelector('.toContent');
+const toTopButton = document.querySelector('.toTop');
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 50) {
+    toContentButton.style.display = "none";
+  } else {
+    toContentButton.style.display = "initial";
+  }
+
+  if (document.documentElement.scrollTop > 500) {
+    toTopButton.style.display = "block";
+  } else {
+    toTopButton.style.display = "none";
+  }
+};
+
 // Alert for non-live projects
 const liveEl = document.querySelectorAll('#notLive');
 
