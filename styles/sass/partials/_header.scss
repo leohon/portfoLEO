@@ -20,10 +20,8 @@ header {
   }
 
   .toContent {
-    display: initial;
     color: variables.$black;
     position: fixed;
-    bottom: 0px;
     animation: bounceDown 2s infinite;
 
     i {
@@ -38,10 +36,10 @@ header {
 
   @keyframes bounceDown {
     from {
-      transform: translateY(-30px);
+      transform: translateY(-100px);
     }
     to {
-      transform: translateY(-15px);
+      transform: translateY(-75px);
     }
   }
 }

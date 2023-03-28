@@ -348,10 +348,8 @@ header .wrapper h1, header .wrapper h3 {
   padding-left: 50px;
 }
 header .toContent {
-  display: initial;
   color: black;
   position: fixed;
-  bottom: 0px;
   -webkit-animation: bounceDown 2s infinite;
           animation: bounceDown 2s infinite;
 }
@@ -365,22 +363,22 @@ header .toContent i {
 }
 @-webkit-keyframes bounceDown {
   from {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   to {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
 }
 @keyframes bounceDown {
   from {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   to {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
   }
 }
 
@@ -694,6 +692,9 @@ footer p a {
 }
 
 @media (max-width: 1400px) {
+  header {
+    height: auto;
+  }
   header .menu {
     margin: 0 400px;
   }
