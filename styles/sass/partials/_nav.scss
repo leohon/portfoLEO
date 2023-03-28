@@ -24,7 +24,7 @@ nav {
         text-transform: uppercase;
       }
 
-      a:hover {
+      a:hover, .home {
         text-decoration: underline 3px variables.$darkOrange;
       }
     }
