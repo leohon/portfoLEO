@@ -32,13 +32,12 @@
   <main>
     <section class="projects" id="projects">
       <div class="wrapper">
-        <h2>Projects</h2>
 
         <!-- Juno Project 4 -->
         <div class="oneProject imgRight">
-          <a href="./styles/sass/assets/projectFour.jpg">
+          <div class="imgContainer">
             <img src="./styles/sass/assets/projectFour.jpg" alt="Love In A Time Of Allergies page">
-          </a>
+          </div>
 
           <div class="info">
             <h3>Love In A Time Of Allergies</h3>
@@ -53,9 +52,9 @@
 
         <!-- Juno Project 3 -->
         <div class="oneProject">
-          <a href="./styles/sass/assets/projectThree.jpg">
+          <div class="imgContainer">
             <img src="./styles/sass/assets/projectThree.jpg" alt="Homepage of Textilee website">
-          </a>
+          </div>
 
           <div class="info">
             <h3>Networking Notes</h3>
@@ -71,9 +70,9 @@
 
         <!-- Juno Project 2 -->
         <div class="oneProject imgRight">
-          <a href="./styles/sass/assets/projectTwo.jpg">
+          <div class="imgContainer">
             <img src="./styles/sass/assets/projectTwo.jpg" alt="Recipe Rescue App page">
-          </a>
+          </div>
 
           <div class="info">
             <h3>Recipe Rescue App</h3>
@@ -88,9 +87,9 @@
 
         <!-- Juno Assignment 2 -->
         <div class="oneProject" id="assignmentTwo">
-          <a href="./styles/sass/assets/assignmentTwo.png">
+          <div class="imgContainer">
             <img src="./styles/sass/assets/assignmentTwo.png" alt="Homepage of Textilee website">
-          </a>
+          </div>
 
           <div class="info">
             <h3>Textilee w/ JavaScript features</h3>
@@ -105,9 +104,9 @@
         
         <!-- Juno Project 1 -->
         <div class="oneProject imgRight">
-          <a href="./styles/sass/assets/projectOne.jpg">
+          <div class="imgContainer">
             <img src="./styles/sass/assets/projectOne.jpg" alt="Homepage of Textilee website">
-          </a>
+          </div>
 
           <div class="info">
             <h3>Textilee</h3>
@@ -122,9 +121,9 @@
 
         <!-- Juno Assignment 1 -->
         <div class="oneProject" id="assignmentOne">
-          <a href="./styles/sass/assets/assignmentOne.jpg">
+          <div class="imgContainer">
             <img src="./styles/sass/assets/assignmentOne.jpg" alt="Front page of Electric Select website">
-          </a>
+          </div>
 
           <div class="info">
             <h3>Electric Select</h3>
@@ -138,6 +137,35 @@
         </div>
       </div>
     </section>
+
+    <!-- Lightbox -->
+    <section id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <!-- Duplicate all images for lightbox. In CSS, hide all, show specific image only when clicked -->
+      <div class="lightboxContainer">
+        <img src="./styles/sass/assets/projectFour.jpg" alt="Love In A Time Of Allergies page">
+      </div>
+
+      <div class="lightboxContainer">
+        <img src="./styles/sass/assets/projectThree.jpg" alt="Homepage of Textilee website">
+      </div>
+
+      <div class="lightboxContainer">
+        <img src="./styles/sass/assets/projectTwo.jpg" alt="Recipe Rescue App page">
+      </div>
+
+      <div class="lightboxContainer">
+        <img src="./styles/sass/assets/assignmentTwo.png" alt="Homepage of Textilee website">
+      </div>
+
+      <div class="lightboxContainer">
+        <img src="./styles/sass/assets/projectOne.jpg" alt="Homepage of Textilee website">
+      </div>
+
+      <div class="lightboxContainer">
+        <img src="./styles/sass/assets/assignmentOne.jpg" alt="Front page of Electric Select website">
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -146,5 +174,7 @@
       <p>Design Inspired by <a href="https://www.behance.net/gallery/157327387/Portfolio-web-developer">Nataliia Korsak</a></p>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
