@@ -486,7 +486,7 @@ nav .menu li a:hover, nav .menu li .home {
   background: linear-gradient(gold, darkorange);
   color: black;
   padding: 15px;
-  margin: 10px 20px 10px 0;
+  margin-right: 20px;
   width: 100px;
   border-radius: 30px;
   cursor: pointer;
@@ -740,6 +740,12 @@ footer p a {
   .oneProject {
     margin: 50px;
   }
+  .oneProject .info {
+    padding: 0px 25px;
+  }
+  .lightbox .lightboxContainer {
+    width: 80%;
+  }
   .contact .content .connect h3 {
     font-size: 1.25rem;
   }
@@ -767,6 +773,12 @@ footer p a {
   }
   .oneProject {
     margin: 50px 0;
+  }
+  .lightbox {
+    padding-top: 100px;
+  }
+  .lightbox .lightboxContainer {
+    width: 90%;
   }
   .skillIcons {
     padding: 15px 50px;
@@ -799,7 +811,7 @@ footer p a {
   .oneProject {
     display: block;
   }
-  .oneProject img, .oneProject .info {
+  .oneProject .imgContainer, .oneProject .info {
     width: 100%;
   }
   .skillIcons {

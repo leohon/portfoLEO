@@ -30,6 +30,14 @@
 
   .oneProject {
     margin: 50px;
+
+    .info {
+      padding: 0px 25px
+    }
+  }
+
+  .lightbox .lightboxContainer {
+    width: 80%;
   }
 
   .contact .content .connect {
@@ -71,6 +79,14 @@
 
   .oneProject {
     margin: 50px 0;
+  }
+
+  .lightbox {
+    padding-top: 100px;
+
+    .lightboxContainer {
+    width: 90%;
+    }
   }
 
   .skillIcons {
@@ -116,7 +132,7 @@
   .oneProject {
     display: block;
 
-    img, .info {
+    .imgContainer, .info {
       width: 100%;
     }
   }
