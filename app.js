@@ -28,19 +28,27 @@ hamburger.addEventListener("click", function() {
 const toContentButton = document.querySelector('.toContent');
 const toTopButton = document.querySelector('.toTop');
 
-window.onscroll = function() {
-  if (document.documentElement.scrollTop > 50) {
+// Scroll event listener for 'to Content'
+window.addEventListener('scroll', function() {
+  if (toContentButton === null) {
+    // Handles console error as there is no toContentButton in projects.html
+  }
+  else if (document.documentElement.scrollTop > 50) {
     toContentButton.style.display = "none";
-  } else {
+  } 
+  else {
     toContentButton.style.display = "initial";
   }
+})
 
+// Scroll event listener for 'to Top'
+window.addEventListener('scroll', function() {
   if (document.documentElement.scrollTop > 500) {
     toTopButton.style.display = "block";
   } else {
     toTopButton.style.display = "none";
   }
-};
+})
 
 // Alert for non-live projects
 const liveEl = document.querySelectorAll('#notLive');
