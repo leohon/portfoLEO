@@ -51,6 +51,50 @@ liveEl.forEach(function(button) {
   })
 })
 
+// Lightbox
+/**
+ * Store all original images.
+ * Target lightbox section and duplicated images
+ * Select close button
+ */
+const projectScreenshots = document.querySelectorAll(".imgContainer");
+const lightbox = document.getElementById("lightbox");
+const images = document.getElementsByClassName("lightboxContainer");
+const closeLB = document.querySelector(".close");
+
+/**
+ * For each screenshot, add a 'click' event.
+ * 1) Display the lightbox section.
+ * 2) Hide the duplicated images.
+ * 3) Going through all lightbox images, if the image source matches the clicked image source, display the image. 
+ */
+projectScreenshots.forEach(function(event) {
+  event.addEventListener("click", function(){
+    lightbox.style.display = "block";
+
+    for (let i = 0; i < images.length; i++){
+      images[i].style.display = "none";
+    }
+
+    for (let j = 0; j < images.length; j++){
+      if (images[j].firstElementChild.src === event.firstElementChild.src) {
+        images[j].style.display = "block";
+      }
+    }
+  })
+})
+
+// Close the lightbox by clicking the 'X' or press 'esc'.
+closeLB.addEventListener("click", function(){
+  lightbox.style.display = "none";
+})
+
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    lightbox.style.display = "none";
+  }
+})
+
 // Reset form on page load after Formspree submit and 'Go back' clicked
 document.getElementById("name").value = "";
 document.getElementById("phone").value = "";
