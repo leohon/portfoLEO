@@ -1,0 +1,24 @@
+@use './variables';
+
+// Source: https://codepen.io/melnik909/pen/qPjwvq?editors=1100
+.timelineGroup {
+  padding-bottom: 15px;
+  border-left: 3px solid;
+
+  .year {
+    width: 100px;
+    text-align: center;
+    background-color: variables.$black;
+    color: variables.$white;
+  }
+
+  .timelineCard::before {
+    content: "";
+    display: block;
+    border-top: 3px solid;
+    position: relative;
+    top: 5rem;
+    z-index: -1;
+    width: 50%;
+  }
+}

@@ -732,6 +732,29 @@ footer p a {
 .projectPage .projectsPageHeader h2 {
   padding-bottom: 25px;
 }
+.projectPage .projectsPageHeader p {
+  padding-bottom: 10px;
+}
+
+.timelineGroup {
+  padding-bottom: 15px;
+  border-left: 3px solid;
+}
+.timelineGroup .year {
+  width: 100px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.timelineGroup .timelineCard::before {
+  content: "";
+  display: block;
+  border-top: 3px solid;
+  position: relative;
+  top: 5rem;
+  z-index: -1;
+  width: 50%;
+}
 
 @media (max-width: 1400px) {
   header {
