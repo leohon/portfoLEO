@@ -490,7 +490,7 @@ nav .menu li a:hover, nav .menu li .home {
   border-radius: 30px;
   cursor: pointer;
 }
-.oneProject .info .buttons #notLive {
+.oneProject .info .buttons #notLive, .oneProject .info .buttons #noCode {
   background: grey;
   cursor: not-allowed;
 }

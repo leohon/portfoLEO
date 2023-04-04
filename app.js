@@ -59,6 +59,15 @@ liveEl.forEach(function(button) {
   })
 })
 
+// Alert for works with no code
+const codeEl = document.querySelectorAll('#noCode');
+
+codeEl.forEach(function(button) {
+  button.addEventListener('click', function() {
+    alert("This site has no code.");
+  })
+})
+
 // Lightbox
 /**
  * Store all original images.
