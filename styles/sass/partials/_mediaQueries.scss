@@ -96,6 +96,14 @@
   .contact .content form {
     margin-right: 25px;
   }
+
+  .projectPage .projectsPageHeader {
+    width: 75%;
+  }
+
+  .timelineGroup {
+    border: none;
+  }
 }
 
 // -------------------------
@@ -147,6 +155,32 @@
     .socials a {
       margin: 0;
     } 
+  }
+
+  .toTop {
+    z-index: 1;
+  }
+
+  .timelineGroup {
+    position: relative;
+
+    .year {
+      margin: auto;
+      font-size: 1.5rem;
+      width: 150px;
+      padding: 10px;
+    }
+  }
+
+  .timelineGroup::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: variables.$black;
+    left: 0;
+    top: 22px;
+    position: absolute;
+    z-index: -1;
   }
 }
 
